@@ -52,10 +52,12 @@ h4 {
     background-image: none;
     background-repeat: no-repeat;
     color: white;
+    font-family: "Quicksand";
+    letter-spacing: -1px;
 }
 
 .navbar-header>.navbar-brand:hover {
-    color:black;
+    color: #e500e1;
 }
 
 .separator {
@@ -79,7 +81,7 @@ h4 {
 
 #navbar>.navbar-nav a:hover {
     background-color: #310042;
-    color: #c32dff;
+    color: #e500e1;
     font-weight: bold;
     
 }
@@ -114,7 +116,7 @@ h4 {
     margin: 0 5% 10px 20%;
     color: #6000c1;
     font-family: 'Quicksand', sans-serif;
-    font-size: 40px;
+    font-size: 4vw;
     //text-shadow: 5px 4px 2px #21003d;
 }
 
@@ -167,10 +169,11 @@ h4 {
               transform: translate3d(-50%,-50%,0);
 }
 .hero h1 {
-    font-size: 6em;    
+    font-size: 5em;    
     font-weight: bold;
     margin: 0;
     padding: 0;
+    white-space: nowrap;
 }
 
 .fade-carousel .carousel-inner .item .hero {
@@ -245,3 +248,9 @@ h4 {
 @media screen and (max-width: 640px){
     .hero h1 { font-size: 4em; }    
 }
+
+@media (max-width: 800px) {
+    .mainTitle { font-size: 1.5em }
+}
+
+          
