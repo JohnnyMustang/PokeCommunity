@@ -59,20 +59,20 @@
     </div>
     
    
-    
-    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+    <button id="hideS" style="padding: 5px; float:right;">Hide</button>
+    <div class="carousel fade-carousel slide mainCar" data-ride="carousel" data-interval="4000" id="bs-carousel" style="clear:both;">
   <!-- Overlay -->
-  <div class="overlay"></div>
+  <div class="overlay mainCar"></div>
 
   <!-- Indicators -->
-  <ol class="carousel-indicators">
+  <ol class="carousel-indicators mainCar">
     <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
     <li data-target="#bs-carousel" data-slide-to="1"></li>
     <li data-target="#bs-carousel" data-slide-to="2"></li>
   </ol>
   
   <!-- Wrapper for slides -->
-  <div class="carousel-inner">
+  <div class="carousel-inner mainCar">
     <div class="item slides active">
       <div class="slide-1"></div>
       <div class="hero">
@@ -83,7 +83,7 @@
         <button class="btn btn-hero btn-lg" role="button">See More</button>
       </div>
     </div>
-    <div class="item slides">
+    <div class="item slides mainCar">
       <div class="slide-2"></div>
       <div class="hero">        
         <hgroup>
@@ -105,11 +105,11 @@
     </div>
   </div> 
 </div>
-    
+     <button id="hideFirstP" style="padding: 5px; float:left;">Hide</button>
      <div class="container separator"></div>            
 <section class="container">
  <div class ="row">
-     <article class="col-md-8">
+     <article class="col-md-8 secondParagraph">
          <img class="responsive-img tinyImg" src="https://www.pokecommunity.com/images/brand-pcdaily-transparent.png">
          <div class="text-warning">Important Information!</div>
             <p class="secondParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a facilisis mi. Ut ac semper leo. Donec pellentesque luctus euismod. Nulla consectetur ultrices est, et dictum enim eleifend sed. Aliquam nec ligula ante. In tristique condimentum libero vitae fringilla. Donec ultrices eget justo sit amet efficitur. Nullam vel sapien hendrerit, aliquet elit id, pellentesque velit. Nullam eu urna egestas ipsum scelerisque tempor. Pellentesque placerat leo elit, nec faucibus libero tempor vel. Aliquam erat volutpat. Nam sapien nisi, dignissim id nulla ac, egestas ullamcorper neque. Phasellus rutrum tellus a urna maximus fermentum. Nunc laoreet vestibulum mi, sed facilisis turpis posuere quis. Aliquam quam ipsum, dictum nec lorem non, tincidunt sollicitudin ante.
@@ -118,6 +118,7 @@
              
      </article>
          <aside class="col-md-4 firstAside">
+             <button id="hideSecondP" style="padding: 5px; float:right;">Hide</button>
              <img class="responsive-img tinyImg2" src="http://k39.kn3.net/CD33E28BB.png">
              <h4>Important Information!</h4>
              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a facilisis mi. Ut ac semper leo. Donec pellentesque luctus euismod. Nulla consectetur ultrices est, et dictum enim eleifend sed. Aliquam nec ligula ante. In tristique condimentum libero vitae fringilla. Donec ultrices eget justo sit amet efficitur. Nullam vel sapien hendrerit, aliquet elit id, pellentesque velit. Nullam eu urna egestas ipsum scelerisque tempor. Pellentesque placerat leo elit, nec faucibus libero tempor vel. Aliquam erat volutpat. Nam sapien nisi, dignissim id nulla ac, egestas ullamcorper neque. Phasellus rutrum tellus a urna maximus fermentum. Nunc laoreet vestibulum mi, sed facilisis turpis posuere quis. Aliquam quam ipsum, dictum nec lorem non, tincidunt sollicitudin ante.</p>
@@ -125,7 +126,26 @@
     </div>
 </section>
     
+<script src="node_modules/jquery/dist/jquery.js">
+</script>
 
+<script>
+
+    $(function() {
+        $('#hideS').on('click', function() {
+            $('.mainCar').slideToggle(150);
+            
+        });
+        $('#hideFirstP').on('click', function() {
+                $('.secondParagraph').slideToggle(150);
+            });
+
+        $('#hideSecondP').on('click', function() {
+                $('.firstAside').slideToggle(150);
+            });
+    });
+
+</script> 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
